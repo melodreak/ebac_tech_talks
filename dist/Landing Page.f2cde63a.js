@@ -1,0 +1,2 @@
+AOS.init();let dataDoEvento=new Date("Dec 20, 2027 19:00:00"),timeStampDoEvento=dataDoEvento.getTime(),contaAsHoras=setInterval(function(){let e=timeStampDoEvento-new Date().getTime(),o=Math.floor(e/864e5),t=Math.floor(e%864e5/36e5),n=Math.floor(e%36e5/6e4),a=Math.floor(e%6e4/1e3);console.log(o),console.log(t),console.log(n),console.log(a),document.getElementById("contador").innerHTML=`${o}d ${t}h ${n}m ${a}s`,e<0&&(clearInterval(contaAsHoras),document.getElementById("contador").innerHTML="Evento expirado")},1e3);
+//# sourceMappingURL=Landing Page.f2cde63a.js.map
